@@ -3,3 +3,8 @@ All the code are in Python3
 ```python
 print("Hello World")
 ```
+
+**99乘法表**
+```bash
+./multipcation99.py
+```
