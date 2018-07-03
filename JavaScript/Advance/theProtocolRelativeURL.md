@@ -4,7 +4,7 @@
 
 
 ```javascript
-<img src="//domain.com/img/logo.png">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
 ```
 The URL without http: or https:
 
