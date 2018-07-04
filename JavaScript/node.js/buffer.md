@@ -23,5 +23,6 @@ var newArry = arr.slice(0)
 console.log(newArry)
 arr[0].name='hello'
 console.log(newArry)
+[ { name: 'hello' }, 2, 3 ]
 
 ```
