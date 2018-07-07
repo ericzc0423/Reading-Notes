@@ -1,0 +1,14 @@
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: until(-100, px);
+  margin-left: until(-100, px);
+  width: 100px;
+  height: 100px;
+  background: lightblue;
+}
+.box a {
+  color: red;
+}
+/*# sourceMappingURL=demo1.css.map */
