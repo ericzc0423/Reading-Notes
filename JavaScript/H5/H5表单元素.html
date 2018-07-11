@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单元素</title>
+    <style>
+        #emailInp:valid{
+            border: 1px solid green;
+        }
+        #emailInp:invalid{
+            border: 1px solid red;
+        }
+        #emailInp{
+            border: 1px;
+        }
+    </style>
+</head>
+<body>
+
+<form action="http://ningcloudgroup/">
+ <!--
+   <form action="">
+       <input type="text">
+       <input type="password">
+       <input type="file">
+
+       <br><br><br>
+-->
+   <!--
+   需要使用NAME进行分组，一组中只能选中一个label有一个FOR属性，指向对应表单元素的ID，操作LABAL中的内容相当于操作表单元素（经常应用于单选或者复选框）
+   -->
+    <!--
+    <input type="radio" name="sex" id="M" checked><label for="M">男</label>
+    <input type="radio" name="sex" id="F" checked><label for="F">女</label>
+    <br><br><br>
+    <input type="checkbox" name="hobby", id="music"> <label for="music">音乐</label>
+    <input type="checkbox" name="hobby", id="dance"> <label for="dance">跳舞</label>
+    <input type="checkbox" name="hobby", id="travel"><label for="travel">旅游</label>
+    <input type="checkbox" name="hobby", id="read"><label for="read">读书</label>
+    <input type="checkbox" name="hobby", id="sleep"><label for="sleep">睡觉</label>
+
+    <br><br><br>
+    <textarea id="desc"></textarea>
+
+    <br><br><br>
+    <select>
+        <option value="北京" >北京</option>
+        <option value="上海">上海</option>
+        <option value="广州" selected>广州</option>
+    </select>
+
+    <br><br><br>
+    <input type="button" value="我就是个按钮">
+    <input type="submit">
+        <!-- SUBMI 点击按钮会跳转到 action的地址，但目前是由Ajax处理 -->
+-->
+   <br><br><br>
+    <input type="date">
+   <br><br><br>
+      <input type="range" min="18" max="65" step="5" value="25">
+<br><br>
+        <input type="color">
+
+        <br><br><br>
+        <input type="mail" id="emailInp">
+
+</form>
+
+    <br><br><br>
+    <input  type="text" id="departement" list="departmentList">
+    <datalist id="departmentList">
+        <option value="市场部">市场部</option>
+        <option value="技术部">技术部</option>
+        <option value="总裁办" >总裁办</option>
+    </datalist>
+</body>
+</html>
