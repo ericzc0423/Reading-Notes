@@ -38,10 +38,83 @@
 
 - 单例设计模式
 
-- 构造原型设计模式
+    ```javascript
+    //=>把实现当前这个模块所有的属性和方法汇总到同一个命名空间下（分组作用，避免了全局yojgr污染）
 
-- 发布订阅模式
+    let exampleRender = (function(){
+    //=>实现当前模块具体业务逻辑的方法全部存在闭包中
+        return {
+            init: function(){
+                //=>入口方法，控制当前模块具体的业务逻辑的方法
+
+                fn();
+            }
+        }
+
+    })
+
+    exampleRender.init()
+
+    ```
+    真实项目中，我们如果想要实现具体的业务逻辑需求，都可以依托单例模式构建；我们把项目划分成各大板块或者模块，把实现同一人板块的方法放在一个独立的命名空间下，方便团队协作开发
+
+- 构造原型设计模式，最贴近OOP面向对象编程思想
+
+    `项目中，不管是封装类库还是插件或者UI组件，基本上都是基于构造原型模式开发的`
+
+    ```javascript
+    class Tool{
+        //=>提供一些常用方法
+        constructor(){
+            this.isCompatible='addEventListener' in document;//=>如果不兼容，返回FALSE(IE6~8)
+            }
+       //挂载到原型的方法
+       css(){
+        //...
+       }
+       //=>挂载到普通对象上的方法
+       static distinct(){
+
+       }
+
+    }
+    class Banner extend Tool {
+
+        constructor(...arg){
+            super();
+            this.xxx=xxx
+        }
+        //=>挂载到子类原型上的方法
+        bindData{
+            this.css()//=>把父类原型的方法扫行（子类继承了你类，那么子类的实例就可以调取父类原型上的方法）
+            this.distinct === undefined;//子类的实例只能调取父类原型上的方法，以及你类给实例提供的私有属性方法，但是父类做为普通对象加入静态方法，子类的实例是无法调取的(只有这样才可以调取使用Tool.distinct())
+        }
+
+    }
+    new Banner()
+    ```
+   问题： 三个类 A/B/C, C继承A/B
+
+    ```javascirpt
+    class A{
+    ...}
+    class B extend A{
+    ...}
+    class C extend B{
+    ...}
+
+
+    ```
+
+
+- 发布订阅模式: 观察者模式
+
+    不同于单例和构造，发布订阅是小型设计模式，应用到某一个具体需求中：凡是当到达某个条件之后要执行N多方法，我们都可以依拖于发布订阅设计模式管理和规划我们JS的代码
+    我们经常把发布订阅模式嵌套到其它的设计模式中
+
 
 - promise模式
+
+    解决AJAX异步请求层级嵌套的问题
 
 
