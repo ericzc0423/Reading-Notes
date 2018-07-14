@@ -1,0 +1,24 @@
+{
+    "name": "read-notes",
+    "version": "1.0.0",
+    "description": "",
+    "keywords": [
+        "javascript",
+        "java",
+        " Linux",
+        " etc"
+    ],
+    "homepage": "http://JSLite.io",
+    "author": "ericchang",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "licenses": "MIT",
+    "idoc": {
+        "theme": "doc",
+        "md": [
+            "index.md"
+        ]
+    }
+}
