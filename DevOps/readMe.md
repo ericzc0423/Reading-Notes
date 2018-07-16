@@ -8,3 +8,12 @@
 Tools:
 1. Git/Github
 2. Jenkins
+3. Supervisor/pm2
+4. npm/yarn
+5. 
+
+IDEs
+
+1. VIM
+2. WebStorm
+3. PyCharm
