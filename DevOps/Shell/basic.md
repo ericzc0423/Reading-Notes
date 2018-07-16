@@ -31,7 +31,17 @@ EZ:Reading-Notes ericchang$ cat /etc/shells
 - ### `test`
 
 **测试文件是否存在**
-```javascript
+```bash
  [ -f eric ] && echo 1 || echo 0
 0
+```
+**`type`**
+```bash
+    EZ:~ ericchang$ type test
+    test is a shell builtin
+    EZ:~ ericchang$ type -a test
+    test is a shell builtin
+    test is /bin/test
+    EZ:~ ericchang$
+
 ```
