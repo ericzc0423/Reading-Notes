@@ -10,7 +10,7 @@ Tools:
 2. Jenkins
 3. Supervisor/pm2
 4. npm/yarn
-5. 
+5.
 
 IDEs
 

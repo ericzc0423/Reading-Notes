@@ -43,5 +43,7 @@ EZ:Reading-Notes ericchang$ cat /etc/shells
     test is a shell builtin
     test is /bin/test
     EZ:~ ericchang$
-
 ```
+
+
+
